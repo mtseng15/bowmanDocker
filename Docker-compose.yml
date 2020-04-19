@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+  bowman_ubuntu:
+    build: .
+    volumes: 
+      - type: bind
+        source: ./src
+        target: /usr/src
