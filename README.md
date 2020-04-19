@@ -18,7 +18,7 @@ docker-compose up
 ```
 docker-compose run --rm bowman_ubuntu
 ```
-**Compile and run the example**
+**In the Docker Container, Compile and run the example**
 ```
 g++ hello.cpp -o hello
 ./hello
