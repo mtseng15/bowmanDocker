@@ -24,3 +24,9 @@ g++ hello.cpp -o hello
 ./hello
 ```
 You can edit the `hello.cpp` file with what ever text editor you want on your local computer, then go back to the terminal window running the container and compile/run the edited file. The src folder on your local host is mounted into the docker container.
+
+If you make changes to the Dockerfile or the Docker-compose.yml you will need to run:
+```
+docker-compose up --build
+```
+to implement those changes.
