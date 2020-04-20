@@ -1,6 +1,6 @@
 # bowmanDocker
 
-### instructions
+## instructions
 **Install Docker Desktop**
 https://www.docker.com/products/docker-desktop
 
@@ -30,3 +30,6 @@ If you make changes to the Dockerfile or the Docker-compose.yml you will need to
 docker-compose up --build
 ```
 to implement those changes.
+
+## Notes
+- The first time you build it (`docker-compose up`) it will take a minuete or two because it must pull the image from Docker Hub and then build the image according to the Dockerfile with all the dependencies defined. But every build after that will be only take a few seconds becuse Docker does and amazing job of caching each step and analyzing changes so it only does exactly what it needs to do and no more.
